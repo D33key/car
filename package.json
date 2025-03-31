@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "./",
+	"homepage": "https://d33key.github.io/car/",
 	"scripts": {
 		"dev": "vite --host",
 		"build": "tsc --noEmit && vite build",
