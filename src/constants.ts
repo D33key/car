@@ -8,7 +8,7 @@ export const CONTROLS = {
 
 export const ROAD_LENGTH = 100;
 export const ROAD_WIDTH = 20;
-export const CAR_SPEED = 0.1;
+export const CAR_SPEED = 0.1
 export const CAR_SPEED_MOBILE = 0.4;
 
 export const MOUNTAIN_WIDTH = 10;
