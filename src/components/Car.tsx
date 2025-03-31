@@ -10,6 +10,9 @@ import {
 } from '../constants';
 import { THREE_REF } from '../type';
 import { MobileJoystickControls } from './MobileControls';
+import shouldAddPrefix from '../shouldAddPrefix';
+
+const source = shouldAddPrefix('/models/car.glb');
 
 export default function Car({ carRef }: { carRef: THREE_REF }) {
 	const [, get] = useKeyboardControls();
@@ -26,7 +29,7 @@ export default function Car({ carRef }: { carRef: THREE_REF }) {
 		);
 
 	const direction = new THREE.Vector3();
-	const { nodes, materials } = useGLTF('/models/car.glb');
+	const { nodes, materials } = useGLTF(source);
 
 	const wheelFrontRef = useRef<THREE.Mesh | null>(null);
 	const wheelBackRef = useRef<THREE.Mesh | null>(null);
@@ -633,4 +636,4 @@ export default function Car({ carRef }: { carRef: THREE_REF }) {
 	);
 }
 
-useGLTF.preload('/models/car.glb');
+useGLTF.preload(source);

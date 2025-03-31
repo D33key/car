@@ -1,3 +1,5 @@
+import shouldAddPrefix from './shouldAddPrefix';
+
 export const CONTROLS = {
 	forward: 'forward',
 	backward: 'backward',
@@ -8,7 +10,7 @@ export const CONTROLS = {
 
 export const ROAD_LENGTH = 100;
 export const ROAD_WIDTH = 20;
-export const CAR_SPEED = 0.1
+export const CAR_SPEED = 0.1;
 export const CAR_SPEED_MOBILE = 0.4;
 
 export const MOUNTAIN_WIDTH = 10;
@@ -36,13 +38,13 @@ export const MARKERS = [
 			number,
 			number,
 		],
-		imageUrl: '/cv.png',
+		imageUrl: shouldAddPrefix('/cv.png'),
 		text: 'CV',
 		url: 'https://drive.google.com/file/d/1CIQIvaJCudzHOnXLaMysZra-_mUMt2Hk/view?usp=sharing',
 	},
 	{
 		position: [ROAD_WIDTH / 4, 0, ROAD_LENGTH - 75] as [number, number, number],
-		imageUrl: '/npm-logo.png',
+		imageUrl: shouldAddPrefix('/npm-logo.png'),
 		text: 'NPM пакет useLocalStorage',
 		url: 'https://www.npmjs.com/package/uselocalstorage-ts',
 	},
@@ -52,13 +54,13 @@ export const MARKERS = [
 			number,
 			number,
 		],
-		imageUrl: '/npm-logo.png',
+		imageUrl: shouldAddPrefix('/npm-logo.png'),
 		text: 'NPM пакет usePointerSwipe',
 		url: 'https://www.npmjs.com/package/usepointerswipe-ts',
 	},
 	{
 		position: [ROAD_WIDTH / 4, 0, ROAD_LENGTH - 95] as [number, number, number],
-		imageUrl: '/github.png',
+		imageUrl: shouldAddPrefix('/github.png'),
 		text: 'GITHUB',
 		url: 'https://github.com/D33key',
 	},
@@ -68,7 +70,7 @@ export const MARKERS = [
 			number,
 			number,
 		],
-		imageUrl: '/tg.png',
+		imageUrl: shouldAddPrefix('/tg.png'),
 		text: 'Telegram',
 		url: 'https://t.me/dimask1s',
 	},

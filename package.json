@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://d33key.github.io/car/",
+	"homepage": "https://d33key.github.io/car",
 	"scripts": {
 		"dev": "vite --host",
 		"build": "tsc --noEmit && vite build",
@@ -26,6 +26,7 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.21.0",
+		"@types/node": "^22.13.14",
 		"@types/react": "^19.0.10",
 		"@types/react-dom": "^19.0.4",
 		"@vitejs/plugin-react": "^4.3.4",

@@ -43,7 +43,12 @@ export const MobileJoystickControls = ({
 	}, []);
 
 	return (
-		<Html>
+		<Html
+			style={{
+				bottom: -window.innerHeight / 3,
+				left: -window.innerWidth / 40
+			}}
+		>
 			<Joystick
 				size={80}
 				baseColor='#666666'

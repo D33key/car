@@ -45,7 +45,7 @@ export default function LinkMarker({
 		);
 
 		if (distance < 3) {
-			const variation = isMobile ? '_blank' : '_blank';
+			const variation = isMobile ? '_top' : '_blank';
 			resetKeys();
 			const a = document.createElement('a');
 
